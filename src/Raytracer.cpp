@@ -14,7 +14,7 @@ int main() {
 		for (int i = 0; i < image_width; ++i) {
 			color pixel_color(double(i) / (image_width - 1),
 					          double(j) / (image_height - 1),
-							  double(std::max(i, j)) /
+							  double(std::max(image_width, image_height) - std::max(i, j)) /
 							  (std::max(image_width, image_height) - 1));
 
 			write_color(std::cout, pixel_color);
