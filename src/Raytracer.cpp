@@ -52,7 +52,7 @@ int main() {
 	world.add(make_shared<sphere>(point3(0.5, -0.25, -1.0), 0.25, material_right));
 
 	// Camera
-	camera cam;
+	camera cam(point3(-2, 2, 1), point3(0, 0, -1), vec3(0, 1, 0), 30, aspect_ratio);
 
 	// Render
 
